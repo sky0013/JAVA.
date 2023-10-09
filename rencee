@@ -1,0 +1,107 @@
+import java.util.*;
+class rence {
+    public static void main(String[] args) {
+    Scanner s = new Scanner(System.in);
+      String rence;
+       int average;
+	float tf;
+	double d1,d2,d3,d4,d5;
+ System.out.println("Enter a name: ");
+      rence=s.nextLine();
+ System.out.println("Enter an average: ");
+      average=s.nextInt();
+	System.out.println("Enter a tuition fee: ");
+	tf = s.nextFloat();
+   
+   System.out.println("The inputted name is : "+ rence);
+ System.out.println("The inputted average is : "+ average);
+ System.out.println("The inputted tuition fee is : "+ tf);
+ 
+      if(average<=74){ 
+        System.out.println("No Discount for tuition fee, exactly" + tf + " pesos will be paid");
+      }
+    else if(average>=75 && average<=79){
+ d1= tf*.10;
+        System.out.println("10% Discount for tuition fee is: " + d1);
+	System.out.println("The total tuition fee will be paid is: " + (tf-d1));
+    }  
+    else if(average>=80 && average<=84){
+ d2= tf*.25;
+      System.out.println("25% Discount for tuition fee is: " + d2);
+	System.out.println("The total tuition fee will be paid is: " + (tf-d2));
+    }
+    else if (average>=85 && average<=89){
+    d3= tf*.5;
+      System.out.println("50% Discount for tuition fee is: " + d3);
+	System.out.println("The total tuition fee will be paid is: " + 
+	(tf-d3));
+    }
+    else if (average>=90 && average<=95){
+    d4= tf*.75;
+      System.out.println("75% Discount for tuition fee is: " + d4);
+	System.out.println("The total tuition fee will be paid is: " + 
+	(tf-d4));
+    }
+    else if (average>=96 && average <=100){
+    d5= tf*.0;
+      System.out.println("100% Discount for tuition fee is: " + tf);
+	System.out.println("The total tuition fee will be paid is: " + d5);
+    }
+    else { 
+System.out.println("Error in discounting tuition fee, Please try again!");
+    }
+       }
+    }
+
+
+
+
+
+package rence;
+
+import java.util.*;
+ class rence {
+    public static void main(String[] args) {
+        
+        /* yung Scanner "s" = new Scanner (System.in);
+        
+        pwede siya palita basta lahat ng Data type papalitan mo rin
+        */
+        
+        Scanner s = new Scanner(System.in);
+        
+        System.out.print("Filipino :");
+ float filipinoGrade = s.nextFloat();
+
+  System.out.print("Math     :");
+float mathGrade = s.nextFloat();
+
+  System.out.print("Science  :");
+   float scienceGrade = s.nextFloat();
+
+  System.out.print("English  :");
+   float englishGrade = s.nextFloat();
+   
+   /* itong float average = (filipinoGrade + mathGrade + scienceGrade + englishGrade) / 4;
+   
+      ginamitan siya ng logic para makuwa lahat expore na lang kung paano kasi may plus sign naka indicate "+"
+   
+   */
+   float average = (filipinoGrade + mathGrade + scienceGrade + englishGrade) / 4;
+   
+   System.out.println();
+   System.out.println("The Average Grade is: " + average);
+   
+   if(average > 100) System.out.println("Invalid Grade");
+   
+   else if(average >= 98);
+   else if(average >= 95);
+   else if(average >= 90); 
+   else if(average >= 75);
+   
+   else System.out.println("Failed");
+ 
+ 
+ 
+ 
+    }
